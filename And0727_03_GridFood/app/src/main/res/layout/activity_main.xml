@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문할 메뉴를 선택 후 [선택완료] 클릭해 주세요."
+        android:textSize="20dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*메뉴 종류*"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_rowSpan="4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/hea"
+            android:id="@+id/img"/>
+
+        <RadioGroup
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="해물 파스타(9,500원)"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbMenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="토마토 파스타(9,000원)"/>
+
+            <RadioButton
+                android:id="@+id/rbMenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="까르보나라(9,500원)"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_columnSpan="2"
+            android:id="@+id/btnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택 완료"
+            android:layout_gravity="center_horizontal"/>
+    </GridLayout>
+
+
+</LinearLayout>

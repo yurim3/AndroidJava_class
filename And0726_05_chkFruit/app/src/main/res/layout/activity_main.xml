@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 과일을 고르세요."
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/chkStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="딸기" />
+
+    <CheckBox
+        android:id="@+id/chkGra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="포도" />
+
+    <CheckBox
+        android:id="@+id/chkKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="키위" />
+
+    <CheckBox
+        android:id="@+id/chkJa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자몽" />
+
+    <Button
+        android:id="@+id/btnEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택 완료" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택 결과: " />
+</LinearLayout>

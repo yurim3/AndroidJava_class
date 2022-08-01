@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설문을 시작하시겠습니까?"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/chkStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작함" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt2"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선호하는 배달 음식은?"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:visibility="invisible"
+        android:id="@+id/rg"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbKor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한식"/>
+
+        <RadioButton
+            android:id="@+id/rbChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중식"/>
+
+        <RadioButton
+            android:id="@+id/rbBun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분식"/>
+
+        <RadioButton
+            android:id="@+id/rbNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="야식"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택 초기화" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cat"
+        android:id="@+id/img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

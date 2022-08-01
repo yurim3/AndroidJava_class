@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 아이돌 그룹은?"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbEnhypen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그냥...... 엔하이픈"/>
+
+        <RadioButton
+            android:id="@+id/rbTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위대하고대단한!!!투모로우바이투게더!!!(tomorrowXtogether)"/>
+
+        <RadioButton
+            android:id="@+id/rbDay6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그냥...... 데이식스"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표" />
+
+</LinearLayout>

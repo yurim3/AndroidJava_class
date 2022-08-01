@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가장 좋아하는 꽃은?"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbRose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장미"/>
+
+        <RadioButton
+            android:id="@+id/rbPansy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="팬지"/>
+
+        <RadioButton
+            android:id="@+id/rbLily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="백합"/>
+    </RadioGroup>
+
+</LinearLayout>
